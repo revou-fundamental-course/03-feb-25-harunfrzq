@@ -3,53 +3,46 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Website Konfersi Suhu</title>
-
+    <title>Website Konfersi Suhu</title> 
     <link rel="stylesheet" href="css\styless.css">
-
 </head>
+
 <body>
     <header class="main-header"> 
         <h1>Konversi Suhu</h1>
-
     </header>
-
     <main>
         <section>
             <p>Masukan suhu derajat Celsius (&deg;C) ke kotak dibawah,
                 lalu klik tombol konversi untuk mendapatkan hasil konversi dalam bentuk Fahrenheit (&deg;F)
             </p>
         </section>
-        <!--Forn input suhu yang ini di konversikan-->
+        <!--Form input suhu yang ini di konversikan-->
         <section>
             <form>
                 <div class="input-group">
                     <label for="input-celcius">Celcius:</label>
                 <input type="number" id="main-input">
                 </div>
-
                 <div class="button-group">
-                    <button class="bg-green">Konversi</button>
+                    <button class="bg-green" type="button" onclick ="validateform()">Konversi</button>
                     <button class="bg-yelow">Reset</button>
-                    <button class="bg-red">Reverse</button>
-                </div>
-                
+                    <button class="bg-red" type="button" onclick= "">Reverse</button>
+                </div>    
             </form>
-
-        
             <!--Hasil Konversi Suhu-->
         </section>
 
         <section>
             <div class="input-group">
                 <label for="input-celcius">Fahrenheit:</label>
-                <input type="number" id="main-result">
+                <input type="text" id="main-result">
              </div>
         </section>
         <section>
             <div class="input-group">
-                <label for="cara konversi">Cara Konversi:</label>
-                <input type="number" id="cara konversi">
+                <label for="cara-konversi">Cara Konversi:</label>
+                <input type="text" id="cara-konversi">
              </div>
 
         </section>
@@ -60,23 +53,18 @@
             </header>
             <hr>
             <article>
-                <p> Suhu <span>S</span> dalam derajat Fahrenheit (&deg;F) sana dengan suhu <span>S</span> dalam derajat Celcius (&deg;C) kali 9/5 tambah 32.
+                <p> Suhu <span>S</span> dalam derajat Fahrenheit (&deg;F) sama dengan suhu <span>S</span> dalam derajat Celcius (&deg;C) kali 9/5 tambah 32.
                 </p>
                 <p>S<sub>(&deg;F)</sub>= (S<sub>(&deg;C)</sub>x9/5)+32</p>
                 <P>atau</P>
                 <P>S<sub>(&deg;F)</sub>= (S<sub>(&deg;C)</sub>x1,8)+32</P>
-
-
             </article>
-
-
-
-
-
         </section>
     </main>
 
     <footer> Made by harun f</footer>
+    <script src="js\script.js"></script>
 </body>
+
 
 </html>
